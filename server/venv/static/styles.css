@@ -5,12 +5,13 @@ body {
     background: #f4f4f4;
     color: #222;
     transition: background 0.3s, color 0.2s;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 .app {
     max-width: 500px;
     margin: 40px auto;
     padding: 16px 24px 36px 24px;
-    box-shadow: 0 4px 24px #0002;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); 
     background: #fff;
     border-radius: 12px;
     min-height: 80vh;
@@ -26,11 +27,11 @@ header {
     font-size: 1.4em;
     cursor: pointer;
 }
-.category-block,
-.add-note-block {
+.category-block {
     margin-top: 24px;
     margin-bottom: 12px;
 }
+.add-note-block 
 .category-block label {
     font-weight: bold;
     margin-right: 6px;
@@ -41,15 +42,27 @@ header {
     border-radius: 5px;
     border: 1px solid #bbb;
 }
-#add-category-btn, #add-note-btn {
+#add-category-btn {
     padding: 5px 12px;
+    margin-top: 12px;
     border-radius: 5px;
     border: none;
-    background: #2577c2;
-    color: #fff;
+    background: #77b3f7;
+    color: black;
     cursor: pointer;
     transition: background 0.2s;
 }
+
+#add-note-btn {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    background: #77b3f7;
+    color: black;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
 #add-category-btn:hover, #add-note-btn:hover {
     background: #1c5a95;
 }

@@ -110,5 +110,10 @@ function applyTheme() {
         toggleThemeBtn.textContent = theme === 'dark' ? "☀️" : "🌙";
 }
 
+noteInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        addNoteBtn.click(); // вызываем событие клика на кнопке добавления
+    }
+});
 // Первая отрисовка
 render();
